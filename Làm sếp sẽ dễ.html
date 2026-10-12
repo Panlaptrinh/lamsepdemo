@@ -1,4 +1,28 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Làm Sếp">
+<meta name="theme-color" content="#F6ECDD">
+<title>Làm Sếp Đâu Dễ - PN Dương</title>
+<meta name="author" content="PN Dương">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="manifest" href="manifest.json">
+<!-- Firebase SDK for Cloud Save -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Nunito:wght@600;700;800;900&display=swap">
+<style>
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
 .qopt.qok { border-color: #3C7F5B; box-shadow: inset 0 0 0 2px #3C7F5B; }
 .qopt.qno { border-color: #C2404E; box-shadow: inset 0 0 0 2px #C2404E; }
 .qopt { text-align: left; align-items: flex-start; }
@@ -62,18 +86,7 @@
 .acc-dot.offline { background: var(--muted); }
 .sync-spin { display: inline-block; animation: spin .8s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
-</style><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" href="favicon.png"><link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Làm Sếp"><meta name="theme-color" content="#F6ECDD"></head><body>
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Làm Sếp"><meta name="theme-color" content="#F6ECDD"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Làm Sếp Đâu Dễ - PN Dương</title>
-  <!-- Firebase SDK for Cloud Save -->
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
-<meta name="author" content="PN Dương">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Nunito:wght@600;700;800;900&display=swap">
-<style>
+
 /* Tông kem, nâu cà phê, cam mật ong và hồng san hô. Số dùng chữ đơn cách. */
 :root {
   --bg: #F6ECDD; --surface: #FFF9EF; --ink: #4A2F27; --muted: #957767; --line: #E7D3B8;
@@ -6479,8 +6492,8 @@ function companyHtml() {
       ${bgmCard()}
       ${awakeCard()}
       ${codeCard()}
-      ${${cloudSaveCard()}
-      btn('Về màn hình chính (đã tự lưu)', 'leave', { kind: 'ghost' })}
+      ${cloudSaveCard()}
+      ${btn('Về màn hình chính (đã tự lưu)', 'leave', { kind: 'ghost' })}
       ${confirmState && confirmState.t === 'wipe' ? `<div class="card warn"><span>Xóa toàn bộ tiến trình?</span><div class="row">${btn('Xóa', 'wipe', { kind: 'bad', sm: true })}${btn('Hủy', 'cancel', { kind: 'ghost', sm: true })}</div></div>` : btn('Xóa dữ liệu và chơi lại', 'ask', { kind: 'bad', id: 'wipe' })}`;
   }
   const L = lvl(), next = E.upgradeInfo(G);
@@ -8075,12 +8088,6 @@ function bgmCard() {
     <span class="sub">Nhạc lo-fi êm dịu: sôi nổi hơn trong giờ làm, thấp thỏm khi tăng ca, mơ màng lúc nghỉ. Tạm dừng game thì nhạc nhỏ lại.</span></div>`;
 }
 
-load();
-render();
-if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) { navigator.serviceWorker.register('sw.js').catch(() => {}); }
-
-
-
 /* ========================================================
    CLOUD SAVE / ACCOUNT SYSTEM
    PN Dương — Làm Sếp Đâu Dễ
@@ -8308,9 +8315,10 @@ function accBadgeHtml() {
   </button>`;
 }
 
+load();
+render();
+if ('serviceWorker' in navigator && navigator.serviceWorker && /^https?:$/.test(location.protocol)) { navigator.serviceWorker.register('sw.js').catch(() => {}); }
+
 </script>
 </body>
 </html>
-
-</body></html>
-</body></html>
